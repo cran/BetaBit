@@ -1,6 +1,6 @@
 Package: BetaBit
 Title: Mini Games from Adventures of Beta and Bit
-Version: 1.2.1
+Version: 1.2.2
 Authors@R: c(
     person("Przemysław", "Biecek", email = "przemyslaw.biecek@gmail.com", role = c("aut", "cre")),
     person("Witold", "Chodor", email = "witoldchodor@gmail.com", role = c("trl")),
@@ -12,7 +12,7 @@ Description: Two games: proton and frequon. Both are console-based data-crunchin
   There are many ways to solve these puzzles. You may use loops, data filtering, ordering, aggregation or other tools.
   Only basics knowledge of R is required to play the game, yet the more functions you know, the more approaches you can try.
   The knowledge of 'dplyr' package is not required but may be very helpful.
-  This game is linked with the ,,Pietraszko's Cave'' story available at <http://biecek.pl/BetaBit/Warsaw>.
+  This game is linked with the Pietraszko's Cave story available at <http://biecek.pl/BetaBit/Warsaw>.
   It's a part of Beta and Bit series.
   You will find more about the Beta and Bit series at <http://betabit.wiki>.
 Depends: R (>= 3.0.0)
@@ -22,11 +22,11 @@ LazyData: true
 Encoding: UTF-8
 RoxygenNote: 5.0.1
 NeedsCompilation: no
-Packaged: 2016-05-26 17:14:41 UTC; pbiecek
+Packaged: 2016-06-01 14:21:23 UTC; pbiecek
 Author: Przemysław Biecek [aut, cre],
   Witold Chodor [trl],
   Katarzyna Fak [aut],
   Foundation SmarterPoland.pl [cph]
 Maintainer: Przemysław Biecek <przemyslaw.biecek@gmail.com>
 Repository: CRAN
-Date/Publication: 2016-05-26 23:09:59
+Date/Publication: 2016-06-01 16:29:55
