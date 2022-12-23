@@ -13,40 +13,44 @@
 #' @examples
 #' library("ggplot2")
 #'
+#' colnames(food) <- c("Energy", "Water", "Protein",
+#'     "Fats", "Sugars", "Starch", "Alcohol", "Fibre", "Group")
+#' colnames(food_mini) <- colnames(food)
+#' colnames(food_max) <- c("Group", "Energy", "Name", "n")
 #' head(food)
 #'
 #' \donttest{
 #' library("ggthemes")
-#' ggplot(data = food, aes(x = Energia)) +
+#' ggplot(data = food, aes(x = Energy)) +
 #'    geom_histogram(color = "white") +
-#'    facet_wrap(~Grupa) +
-#'    labs(title = "Wartość energetyczna produktów", subtitle = "na 100 g",
-#'       x = "Wartość energetyczna", y = "Liczba") +
+#'    facet_wrap(~Group) +
+#'    labs(title = "Energy value of the products", subtitle = "per 100 g",
+#'       x = "Energy value", y = "Number") +
 #'    theme_economist()
 #'
-#' ggplot(data = food_mini, aes(x = Energia)) +
+#' ggplot(data = food_mini, aes(x = Energy)) +
 #'    geom_histogram(color = "white") +
-#'    facet_wrap(~Grupa) +
-#'    labs(title = "Wartość energetyczna produktów", subtitle = "na 100 g",
-#'       x = "Wartość energetyczna", y = "Liczba") +
+#'    facet_wrap(~Group) +
+#'    labs(title = "Energy value of the products", subtitle = "per 100 g",
+#'       x = "Energy value", y = "Number") +
 #'    theme_economist()
 #'
-#' ggplot(data = food, aes(x = Białko, y = Tłuszcze,
-#'    color = Grupa, size = Energia)) +
+#' ggplot(data = food, aes(x = Protein, y = Fats,
+#'    color = Group, size = Energy)) +
 #'      geom_point() +
 #'    scale_color_brewer(type = "qual", palette = "Dark2") +
-#'  labs(title = "Udział białka i tłuszczów", subtitle = "na 100 g",
-#'       y = "Tłuszcze [g]", x = "Białko [g]") +
+#'  labs(title = "Share of protein and fats", subtitle = "per 100 g",
+#'       y = "Fats [g]", x = "Protein [g]") +
 #'       theme_gdocs()
 #'
-#' ggplot(data = food, aes(x = Grupa, y = Energia)) +
+#' ggplot(data = food, aes(x = Group, y = Energy)) +
 #'   geom_rug(sides = "l") +
-#'   geom_violin(scale = "width", aes(fill = Grupa)) +
-#'   geom_text(data = food_max, aes(label =  Nazwa),
+#'   geom_violin(scale = "width", aes(fill = Group)) +
+#'   geom_text(data = food_max, aes(label =  Name),
 #'           hjust = 0, vjust = 0, color = "blue4") +
 #'   geom_boxplot(width = 0.2, coef = 100) +
 #'   coord_flip() +
-#'   labs(title = "Rozkład wartości energetycznej", subtitle = "na 100 g") +
+#'   labs(title = "Energy value distribution", subtitle = "per 100 g") +
 #'   theme_gdocs() + theme(legend.position = "none")
 #'
 #' }

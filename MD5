@@ -1,11 +1,11 @@
-c8707c213851cdcf00e8da12f6615fd9 *DESCRIPTION
+2ae484e38b377093cbd452d68233a3af *DESCRIPTION
 1232c98483127b374500d2fa73aed106 *NAMESPACE
 72f9e635ff53809545eb3091e16b007b *R/EnglishLetterFrequency.R
 896db374de2b4dd19d34800fdabacd34 *R/FSW.R
 00c5beade0cdff85fa3bff76bbb6043b *R/bash_history.R
 e20b679746f68ff5fb3dd639347afef5 *R/dataFSW.R
 ab75f00c8b654f657945755822ffca3d *R/employees.R
-b26e3f7d8c1cf9c3a61ff2a89a902512 *R/food.R
+75746b880f7654131379cb0eedc6d8fa *R/food.R
 edeed6446c4f665e8f8443528b3749da *R/frequon.R
 e9c8a43da59160eb98418b1f8accf3c3 *R/logs.R
 84c444a467a1373bc1975ee338dbbf5a *R/messages.R
@@ -35,7 +35,7 @@ c98446189edbcb2a793ac4cd73921636 *man/FSW.Rd
 823857b75cc825b4eba61c957f879a87 *man/bash_history.Rd
 e8647b91bbe015d3662be9fe54476f27 *man/dataFSW.Rd
 64ba18c9c4710e4940c517b559dd6167 *man/employees.Rd
-6e0ae52f9fffe8bfce9418a2e8169752 *man/food.Rd
+80d3a328e79347beea37cc4285c52331 *man/food.Rd
 2667b7c2468411fa2d361ad1a32bf11a *man/frequon.Rd
 7fb49805276aa2193b28b59c80ca7766 *man/guns.Rd
 bafebcd132a3116f6ad48b147231786d *man/logs.Rd
