@@ -7,16 +7,16 @@
 #' at \url{https://www.rivm.nl/documenten/nevo-online-versie}.
 #'
 #' The preprocessed data can be used to reproduce the charts
-#' from the book Wyrkesy od kuchni (Charts from the Kitchen)
-#' \url{https://github.com/BetaAndBit/Wykresy}
+#' from the book Wykresy od kuchni (Chart runners)
+#' \url{https://github.com/BetaAndBit/Charts}
+#'
+#' Note that data frames \code{food}, \code{food_max}, \code{food_mini}, \code{food_all}
+#' have product names in English, while
+#' \code{food_pl}, \code{food_max_pl}, \code{food_mini_pl}, \code{food_all_pl}
+#' have product names in Polish.
 #'
 #' @examples
 #' library("ggplot2")
-#'
-#' colnames(food) <- c("Energy", "Water", "Protein",
-#'     "Fats", "Sugars", "Starch", "Alcohol", "Fibre", "Group")
-#' colnames(food_mini) <- colnames(food)
-#' colnames(food_max) <- c("Group", "Energy", "Name", "n")
 #' head(food)
 #'
 #' \donttest{
@@ -58,7 +58,7 @@
 #' @docType data
 #' @keywords datasets
 #' @name food
-#' @aliases food food_max food_mini food_all
+#' @aliases food food_max food_mini food_all food_pl food_max_pl food_mini_pl food_all_pl
 #' @format data frame: 2207 obs. of 9 variables
 NULL
 
